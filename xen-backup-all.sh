@@ -11,7 +11,7 @@ fi
 # $1 remote command
 remote_exec() {
     chmod 0600 $PEMKEY
-    ssh -i $PEMKEY -o "StrictHostKeyChecking no" $USERHOST $1
+    ssh -i $PEMKEY $USERHOST $1
 }
 
 SCRIPTDIR=$(cd ${0%/*}; pwd)
