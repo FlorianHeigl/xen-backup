@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -e
+#!/usr/bin/env bash
 
 if [ "${#}" = "0" ]
 then
@@ -7,6 +7,8 @@ then
     echo "${0} [vm name]"
     exit
 fi
+
+set -e
 
 VMNAME=${1}
 
